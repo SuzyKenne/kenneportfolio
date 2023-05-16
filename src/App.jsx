@@ -20,14 +20,7 @@ function App() {
      return ( 
      <> 
      <Header/>
-      <Navbar/> 
-      <About/> 
-     
-       <Services/>
-        <Portfolio/>
-        <Testimonial/> 
-<Contact/>
- <Footer/> 
+      
  </>
 );
 }

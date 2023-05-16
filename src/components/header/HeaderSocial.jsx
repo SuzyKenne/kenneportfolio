@@ -1,8 +1,8 @@
 import React from 'react'
- import BsLinkedin from 'react-icons/bs'
-  import FaGithub from 'react-icons/fa'
-   import FaFacebookF from 'react-icons/fa' 
-   import CgTwitter from 'react-icons/cg'
+ import {BsLinkedin} from 'react-icons/bs'
+  import {FaGithub} from 'react-icons/fa'
+   import {FaFacebookF} from 'react-icons/fa' 
+   import{ CgTwitter} from 'react-icons/cg'
 const HeaderSocial = () => { 
     return ( 
     <div className='header__social'>
@@ -13,4 +13,4 @@ const HeaderSocial = () => {
 </div>
 )
 }
-export default HeaderSocial;
+export default HeaderSocial
