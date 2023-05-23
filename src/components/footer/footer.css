@@ -1,0 +1,10 @@
+.footer_heading {
+    margin-top: 20vh;
+}
+
+/********************************************/
+@media screen and (max-width:1024px) {
+    .footer_heading {
+        margin-top: 15vh;
+    }
+}
