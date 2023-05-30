@@ -1,31 +1,24 @@
-import React from "react";
-import "./navbar.css";
-import { AiOutlineHome } from "react-icons/ai";
-import { BsFillPersonFill } from "react-icons/bs";
-import { MdWork } from "react-icons/md";
-import { IoIosContact } from "react-icons/io";
-import { useState } from "react";
+import React from 'react'
+import './navbar.css'
+import {AiOutlineHome} from 'react-icons/ai'
+import {AiOutlineUser} from 'react-icons/ai'
+import {BiBook} from 'react-icons/bi'
+import {RiServiceLine} from 'react-icons/ri'
+import { BiMessageSquareDetail} from 'react-icons/bi'
+import { useState } from 'react'
 
+ 
 const Navbar = () => {
-
-  const [activeNavbar, setActiveNavbar] = useState('#')
-
-  return (
-    <navbar className='navbar'>
-      <a href="#" onClick={()=> setActiveNavbar('#')} className={activeNavbar==='#' ?'active':''}>
-        <AiOutlineHome />
-      </a>
-      <a href="#about" onClick={()=> setActiveNavbar('#about')} className={activeNavbar==='#About' ?'active':''}>
-        <BsFillPersonFill />
-      </a>
-      <a href="#experience" onClick={()=> setActiveNavbar('#experience')} className={activeNavbar==='#Experience' ?'active':''}>
-        <MdWork />
-      </a>
-      <a href="#contact" onClick={()=> setActiveNavbar('#contact')} className={activeNavbar==='#Contact' ?'active':''}>
-        <IoIosContact />
-      </a>
-    </navbar>
-  );
-};
+    const [activeNav, setActiveNav] = useState('#')
+    return (
+        <nav>
+            <a href='#' onClick={()=>setActiveNav('#')} className={activeNav==='#'? 'active' : ''}><AiOutlineHome/></a>
+            <a href='#about' onClick={()=>setActiveNav('#about')} className={activeNav==='#about'? 'active' : ''} ><AiOutlineUser/></a>
+            <a href='#experience' onClick={()=>setActiveNav('#experience')} className={activeNav==='#experience'? 'active' : ''}><BiBook/></a>
+            <a href='#service' onClick={()=>setActiveNav('#service')} className={activeNav==='#service'? 'active' : ''}><RiServiceLine/></a>
+            <a href='#contact' onClick={()=>setActiveNav('#contact')} className={activeNav==='#contact'? 'active' : ''}><BiMessageSquareDetail/></a>
+        </nav>
+    )
+}
 
 export default Navbar;
