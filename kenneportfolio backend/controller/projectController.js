@@ -4,27 +4,41 @@ const Project = require("../model/projectModel");
 //function to get all projects in the database
 async function  getAllProjects(req, res, next){
 
-    const projects = await Project.find({}).sort({ createdAt: -1})
+    try {
+        const projects = await Project.find({}).sort({ createdAt: -1})
 
-    return next(
-        res.status(200).json(projects)
-        
-    )
+        return next(
+            res.status(200).json(projects)
+            
+        )
+    } catch (error) {
+        return next(
+        res.status(400).json({
+            message : error
+        }))
+    }
+    
 }
 
 //function to create a document to the database
 async function createProject(req, res, next){
     const ProjectData= req.body;
+    try {
+        const newProject = await Project.create(ProjectData);
 
-    const newProject = await Project.create(ProjectData);
-
-    return next(
-        res.status(200).json({
-            Status :"OK",
-            message : "Project succefully added!"
-        })
-       
-    )
+        return next(
+            res.status(200).json({
+                Status :"OK",
+                message : "Project succefully added!"
+            })
+        
+        )
+    } catch (error) {
+        return next(
+            res.status(400).json({
+                message : error
+            }))
+    }
 }
 
 
