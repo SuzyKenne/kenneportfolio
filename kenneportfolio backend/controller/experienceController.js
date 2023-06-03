@@ -4,7 +4,7 @@ const Experience = require ("../model/ExperienceModel");
 
 //funcions to get all the experience in the database
 async function getAllExperience(req, res, next){
-    const experiences = await experiences.find({}).sort({ createdAt: -1})
+    const experiences = await Experience.find({}).sort({ createdAt: -1})
     
     return next(
         res.status(200).json(experiences)
@@ -16,7 +16,7 @@ async function getAllExperience(req, res, next){
 async function createExperience(req, res, next){
     const experienceData= req.body;
 
-    const newExperience = await experiences.create(experienceData);
+    const newExperience = await Experience.create(experienceData);
 
     return next(
         res.status(200).json({
@@ -39,7 +39,7 @@ async function getOneExperience(req, res, next){
         ) 
     }
 
-    const experience = await experience.findById({_id : id })
+    const experience = await Experience.findById({_id : id })
 
     if(!experience){
         return next(
@@ -70,7 +70,7 @@ async function updateExperience(req, res,next){
         ) 
     }
 
-    const experience = await experience.findByIdAndUpdate({_id: id}, {
+    const experience = await Experience.findByIdAndUpdate({_id: id}, {
         ...req.body, update
     })
     if(!experience){
@@ -98,7 +98,7 @@ async function deleteExperience(req, res, next){
         ) 
     }
 
-    const experience = await experience.findByIdAndDelete({_id: id })
+    const experience = await Experience.findByIdAndDelete({_id: id })
 
 if(!experience){
         return next(

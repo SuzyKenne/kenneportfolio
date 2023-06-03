@@ -26,7 +26,7 @@ mongoose.connect(DBURL)
 // middleware
 app.use(express.json());
 app.use( (req, res, next) =>{
-    console.log(req, path, req.method);
+    console.log(req.path, req.method);
     next();
 });
 app.use(cors({
@@ -34,8 +34,16 @@ app.use(cors({
     "methods" : ["GET", "POST", "DELETE", "PATCH"]
 }));
 
+
 //defining route
-app.use("/project", projectRoute);
+app.use("/projects", projectRoute);
 app.use("/services", serviceRoute);
 app.use("/experiences", experienceRoute)
-app.use("/testimonials", testimonialRoute)
+app.use("/testimonials", testimonialRoute);
+app.use("/", (req, res)=>{
+    return (
+        res.status(200).json({
+            message: "Root URL, Please navigate to a valid Endpoint"
+        })
+    )
+})

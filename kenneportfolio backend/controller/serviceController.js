@@ -1,10 +1,11 @@
 const mongoose = require ('mongoose')
-const Servive = require ("../model/ServicesModel");
+const Service = require ("../model/ServicesModel");
 
 
 //funcions to get all the service in the database
 async function getAllService(req, res, next){
-    const service = await service.find({}).sort({ createdAt: -1})
+
+    const service = await Service.find({}).sort({ createdAt: -1})
     
     return next(
         res.status(200).json(service)
@@ -16,7 +17,7 @@ async function getAllService(req, res, next){
 async function createService(req, res, next){
     const serviceData= req.body;
 
-    const newService = await service.create(serviceData);
+    const newService = await Service.create(serviceData);
 
     return next(
         res.status(200).json({
@@ -39,7 +40,7 @@ async function getOneService(req, res, next){
         ) 
     }
 
-    const service = await service.findById({_id : id })
+    const service = await Service.findById({_id : id })
 
     if(!service){
         return next(
@@ -70,7 +71,7 @@ async function updateService(req, res,next){
         ) 
     }
 
-    const service = await service.findByIdAndUpdate({_id: id}, {
+    const service = await Service.findByIdAndUpdate({_id: id}, {
         ...req.body, update
     })
     if(!service){
@@ -98,7 +99,7 @@ async function deleteService(req, res, next){
         ) 
     }
 
-    const service = await service.findByIdAndDelete({_id: id })
+    const service = await Service.findByIdAndDelete({_id: id })
 
 if(!service){
         return next(

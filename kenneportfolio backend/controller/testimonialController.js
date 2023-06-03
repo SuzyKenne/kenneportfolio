@@ -4,7 +4,7 @@ const Testimonial = require ("../model/TestimonialModel");
 
 //funcions to get all the testimonials in the database
 async function getAllTestimonial(req, res, next){
-    const testimonial = await testimonial.find({}).sort({ createdAt: -1})
+    const testimonial = await Testimonial.find({}).sort({ createdAt: -1})
     
     return next(
         res.status(200).json(testimonial)
@@ -16,7 +16,7 @@ async function getAllTestimonial(req, res, next){
 async function createTestimonial(req, res, next){
     const testimonialData= req.body;
 
-    const newTestimonial = await testimonial.create(testimonialData);
+    const newTestimonial = await Testimonial.create(testimonialData);
 
     return next(
         res.status(200).json({
@@ -39,7 +39,7 @@ async function getOneTestimonial(req, res, next){
         ) 
     }
 
-    const testimonial = await testimonial.findById({_id : id })
+    const testimonial = await Testimonial.findById({_id : id })
 
     if(!testimonial){
         return next(
@@ -70,7 +70,7 @@ async function updateTestimonial(req, res,next){
         ) 
     }
 
-    const testimonial = await testimonial.findByIdAndUpdate({_id: id}, {
+    const testimonial = await Testimonial.findByIdAndUpdate({_id: id}, {
         ...req.body, update
     })
     if(!testimonial){
@@ -98,9 +98,9 @@ async function deleteTestimonial(req, res, next){
         ) 
     }
 
-    const testimonial = await testimonial.findByIdAndDelete({_id: id })
+    const testimonial = await Testimonial.findByIdAndDelete({_id: id })
 
-if(!testimoniale){
+if(!testimonial){
         return next(
             res.status(404).json({
                 message: "Testimonial Not Found"
