@@ -1,6 +1,6 @@
 const mongoose = require ("mongoose");
 
-const ExperienceSchema = new mongoose.Schema({
+const experienceSchema = new mongoose.Schema({
     category:{
         title: String,
         required:[true,"enter the of the category"],
@@ -24,5 +24,6 @@ const ExperienceSchema = new mongoose.Schema({
 
 },{timestamps:true});
 
-const Experience = mongoose.model ('Experience',ExperienceSchema)
+const Experience = mongoose.model ('Experience', experienceSchema)
+
 module.exports= Experience;
