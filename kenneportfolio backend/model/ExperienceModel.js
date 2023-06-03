@@ -2,8 +2,9 @@ const mongoose = require ("mongoose");
 
 const experienceSchema = new mongoose.Schema({
     category:{
-        title: String,
-        required:[true,"enter the of the category"],
+        
+        type: String,
+        required:[true, "enter the name of the category"],
         unique :[true, "the category name should be unique"],
 
     },
