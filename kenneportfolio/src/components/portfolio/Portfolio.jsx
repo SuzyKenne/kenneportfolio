@@ -28,21 +28,21 @@ export const Portfolio = () => {
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 4,
-      title:'Project 4'
+      title:'Project 3'
     },
     {
       image : image6,
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 5,
-      title:'Project 5'
+      title:'Project 4'
     },
     {
       image : image7,
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 6,
-      title:'Project 6'
+      title:'Project 5'
     },
      
 
