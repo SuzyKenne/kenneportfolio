@@ -32,7 +32,7 @@ e.preventDefault();
      <MdOutlineEmail className='contact__option__icon'/> 
      <h4>Email</h4> 
      <h5>myEmail@gmail.com</h5> 
-     <a href='mailto:aldenovpoutine99@gmail.com' target='_blank'>send a message</a>
+     <a href='suzyndatewo@gmail.com' target='_blank'>send a message</a>
 
       </article>
 
@@ -44,7 +44,7 @@ e.preventDefault();
 <article className='contact__option'> 
 <BsWhatsapp className='contact__option__icon'/>
  <h4>Whatsapp</h4> <h5>Direct message</h5>
-  <a href='https://web.whatsapp.com/send?phone=+237657268549' target='_blank'>Whatsapp me</a>
+  <a href='https://web.whatsapp.com/send?phone=+237650398429' target='_blank'>Whatsapp me</a>
    </article> 
    </div>
 

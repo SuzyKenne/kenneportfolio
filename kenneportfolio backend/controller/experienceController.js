@@ -4,27 +4,45 @@ const Experience = require ("../model/ExperienceModel");
 
 //funcions to get all the experience in the database
 async function getAllExperience(req, res, next){
-    const experiences = await Experience.find({}).sort({ createdAt: -1})
+    try {
+        const experiences = await Experience.find({})
     
-    return next(
-        res.status(200).json(experiences)
-        
-    )
+        return next(
+            res.status(200).json(experiences)
+            
+        )
+    } catch (error) {
+        return next(
+            res.status(400).json({
+                message: error
+            })
+        )
+    }
+    
 }
 
 //function to create a document to the database
 async function createExperience(req, res, next){
     const experienceData= req.body;
 
-    const newExperience = await Experience.create(experienceData);
+    try {
+        const newExperience = await Experience.create(experienceData);
 
-    return next(
-        res.status(200).json({
-            Status :"OK",
-            message : "Experience succefully added!"
-        })
-       
-    )
+        return next(
+            res.status(200).json({
+                Status :"OK",
+                message : "Experience succefully added!"
+            })
+        
+        )
+    } catch (error) {
+        return next(
+            res.status(400).json({
+                message: error
+            })
+        )
+    }
+    
 }
 
 //functions to get one document from the database

@@ -5,27 +5,46 @@ const Service = require ("../model/ServicesModel");
 //funcions to get all the service in the database
 async function getAllService(req, res, next){
 
-    const service = await Service.find({}).sort({ createdAt: -1})
+    try {
+         const service = await Service.find({}).sort({ createdAt: -1})
     
-    return next(
-        res.status(200).json(service)
-        
-    )
+        return next(
+            res.status(200).json(service)
+            
+        )
+    } catch (error) {
+        return next(
+            res.status(400).json({
+                message: error
+            })
+        )
+    }
+   
 }
 
 //function to create a document to the database
 async function createService(req, res, next){
     const serviceData= req.body;
 
-    const newService = await Service.create(serviceData);
+    try {
+            const newService = await Service.create(serviceData);
 
-    return next(
-        res.status(200).json({
-            Status :"OK",
-            message : "service succefully added!"
-        })
-       
-    )
+        return next(
+            res.status(200).json({
+                Status :"OK",
+                message : "service succefully added!"
+            })
+        
+        )
+    } catch (error) {
+        return next(
+            res.status(400).json({
+                message: error
+            })
+        )
+        
+    }
+
 }
 
 //functions to get one document from the database

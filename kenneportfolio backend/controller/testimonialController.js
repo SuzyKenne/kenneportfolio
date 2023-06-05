@@ -4,27 +4,46 @@ const Testimonial = require ("../model/TestimonialModel");
 
 //funcions to get all the testimonials in the database
 async function getAllTestimonial(req, res, next){
-    const testimonial = await Testimonial.find({}).sort({ createdAt: -1})
+    try {
+        const testimonial = await Testimonial.find({}).sort({ createdAt: -1})
     
-    return next(
-        res.status(200).json(testimonial)
-        
-    )
+        return next(
+            res.status(200).json(testimonial)
+            
+        )
+    } catch (error) {
+        return next(
+            res.status(400).json({
+                message: error
+            })
+        )
+    }
+    
 }
 
 //function to create a testimonial to the database
 async function createTestimonial(req, res, next){
     const testimonialData= req.body;
 
-    const newTestimonial = await Testimonial.create(testimonialData);
+    try {
+        const newTestimonial = await Testimonial.create(testimonialData);
 
-    return next(
-        res.status(200).json({
-            Status :"OK",
-            message : "testimonial succefully added!"
-        })
-       
-    )
+        return next(
+            res.status(200).json({
+                Status :"OK",
+                message : "testimonial succefully added!"
+            })
+        
+        )
+    } catch (error) {
+        return next(
+            res.status(400).json({
+                message: error
+            })
+        )
+    }
+
+  
 }
 
 //functions to get one testimonial from the database
