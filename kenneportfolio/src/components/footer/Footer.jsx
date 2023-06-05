@@ -1,5 +1,4 @@
 import React from 'react'
-import { BsLinkedin } from 'react-icons/bs';
 import {FaGithub} from 'react-icons/fa'
 import {FaFacebookF} from 'react-icons/fa'
 import { CgTwitter } from "react-icons/cg";
@@ -37,16 +36,13 @@ const Footer = () => {
         </ul>
 
         <div className="footer__media">
-          <a href="https://linkedin.com" target="blank">
-            <BsLinkedin />
-          </a>
-          <a href="https://github.com" target="blank">
+          <a href="https://github.com?Suzykenne" target="blank">
             <FaGithub />
           </a>
-          <a href="https://facebook.com" target="blank">
+          <a href="https://www.facebook.com/suzy.ndatewo/" target="blank">
             <FaFacebookF />
           </a>
-          <a href="https://twitter.com" target="blank">
+          <a href="https://twitter.com/Suzydatewo" target="blank">
             <CgTwitter />
           </a>
         </div>

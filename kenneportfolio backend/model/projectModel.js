@@ -11,7 +11,7 @@ const project = new mongoose.Schema({
         type : String,
         required: [true, "a project must have a github link"]
     },
-    livelLink: {
+    liveLink: {
         type : String,
 
     },

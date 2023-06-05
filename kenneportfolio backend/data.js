@@ -20,13 +20,13 @@ const PROJECT = [
     {
        "images" : "https://firebasestorage.googleapis.com/v0/b/kenneportfolio.appspot.com/o/projectImages%2Fimage3.png?alt=media&token=91a67891-b79f-4071-90d7-5fd0a059a331&_gl=1*1fi7122*_ga*MTg5MzA0MzgyMi4xNjg1OTg3MjY5*_ga_CW55HF8NVT*MTY4NTk4NzI3My4xLjEuMTY4NTk4Nzk1OS4wLjAuMA..",
        "githubLink" : "https://github.com/SuzyKenne",
-       "liveLink" : "",
+       "liveLink" : "https://firebasestorage.googleapis.com/v0/b/kenneportfolio.appspot.com/o/projectImages%2Fimage3.png?alt=media&token=91a67891-b79f-4071-90d7-5fd0a059a331&_gl=1*1fi7122*_ga*MTg5MzA0MzgyMi4xNjg1OTg3MjY5*_ga_CW55HF8NVT*MTY4NTk4NzI3My4xLjEuMTY4NTk4Nzk1OS4wLjAuMA..",
        "title": "project1"
 
     },
     {
        "images" : "https://firebasestorage.googleapis.com/v0/b/kenneportfolio.appspot.com/o/projectImages%2Fimage4.PNG?alt=media&token=44392ded-fc4a-46a9-9d1c-36c072c79f5e&_gl=1*1iprsgo*_ga*MTg5MzA0MzgyMi4xNjg1OTg3MjY5*_ga_CW55HF8NVT*MTY4NTk4NzI3My4xLjEuMTY4NTk4ODE2OC4wLjAuMA..",
-       "liveLink" : "",
+       "liveLink" : "https://firebasestorage.googleapis.com/v0/b/kenneportfolio.appspot.com/o/projectImages%2Fimage4.PNG?alt=media&token=44392ded-fc4a-46a9-9d1c-36c072c79f5e&_gl=1*1iprsgo*_ga*MTg5MzA0MzgyMi4xNjg1OTg3MjY5*_ga_CW55HF8NVT*MTY4NTk4NzI3My4xLjEuMTY4NTk4ODE2OC4wLjAuMA..",
        "title": "project2",
        "githubLink" : "https://github.com/SuzyKenne"
 
@@ -34,21 +34,21 @@ const PROJECT = [
     {
        "images" : "https://firebasestorage.googleapis.com/v0/b/kenneportfolio.appspot.com/o/projectImages%2Fimage5.PNG?alt=media&token=cc46c0f3-d25d-4618-9d5f-90aca0eb5045&_gl=1*pqjp4y*_ga*MTg5MzA0MzgyMi4xNjg1OTg3MjY5*_ga_CW55HF8NVT*MTY4NTk4NzI3My4xLjEuMTY4NTk4ODA5Ny4wLjAuMA..",
        "githubLink" : "https://github.com/SuzyKenne",
-       "liveLink" : "",
+       "liveLink" : "https://firebasestorage.googleapis.com/v0/b/kenneportfolio.appspot.com/o/projectImages%2Fimage5.PNG?alt=media&token=cc46c0f3-d25d-4618-9d5f-90aca0eb5045&_gl=1*pqjp4y*_ga*MTg5MzA0MzgyMi4xNjg1OTg3MjY5*_ga_CW55HF8NVT*MTY4NTk4NzI3My4xLjEuMTY4NTk4ODA5Ny4wLjAuMA..",
        "title": "project3"
 
     },
     {
        "images" : "https://firebasestorage.googleapis.com/v0/b/kenneportfolio.appspot.com/o/projectImages%2Fimage6.PNG?alt=media&token=0f6fde8f-0bd3-4bdd-9024-f51d2c249180&_gl=1*bsv7l0*_ga*MTg5MzA0MzgyMi4xNjg1OTg3MjY5*_ga_CW55HF8NVT*MTY4NTk4NzI3My4xLjEuMTY4NTk4ODI0My4wLjAuMA..",
        "githubLink" : "https://github.com/SuzyKenne",
-       "liveLink" : "",
+       "liveLink" : "https://firebasestorage.googleapis.com/v0/b/kenneportfolio.appspot.com/o/projectImages%2Fimage6.PNG?alt=media&token=0f6fde8f-0bd3-4bdd-9024-f51d2c249180&_gl=1*bsv7l0*_ga*MTg5MzA0MzgyMi4xNjg1OTg3MjY5*_ga_CW55HF8NVT*MTY4NTk4NzI3My4xLjEuMTY4NTk4ODI0My4wLjAuMA..",
        "title": "project4"
 
     },
     {
         "images" : "https://firebasestorage.googleapis.com/v0/b/kenneportfolio.appspot.com/o/projectImages%2Fimage7.PNG?alt=media&token=251e9de9-b7ae-4968-9d0d-23535b1f7081&_gl=1*qlftce*_ga*MTg5MzA0MzgyMi4xNjg1OTg3MjY5*_ga_CW55HF8NVT*MTY4NTk4NzI3My4xLjEuMTY4NTk4ODM4MS4wLjAuMA..",
         "githubLink" : "https://github.com/SuzyKenne",
-        "liveLink" : "",
+        "liveLink" : "https://firebasestorage.googleapis.com/v0/b/kenneportfolio.appspot.com/o/projectImages%2Fimage7.PNG?alt=media&token=251e9de9-b7ae-4968-9d0d-23535b1f7081&_gl=1*qlftce*_ga*MTg5MzA0MzgyMi4xNjg1OTg3MjY5*_ga_CW55HF8NVT*MTY4NTk4NzI3My4xLjEuMTY4NTk4ODM4MS4wLjAuMA..",
         "title" : "project5"
     }
 

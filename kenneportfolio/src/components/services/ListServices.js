@@ -6,13 +6,9 @@ const ListServices = () => {
     const [data, setData] = useState([])
 
     useEffect(() =>{
-        getServices()
+
     }, [])
 
-    const getServices = async () => {
-        const response = await axios.get('http://localhost:5000/api/service/services')
-        setData(response.data.services)
-    }
     console.log(data)
     return data.map((d)=>{
         return(
