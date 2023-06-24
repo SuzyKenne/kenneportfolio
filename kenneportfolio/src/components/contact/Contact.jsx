@@ -4,6 +4,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { useRef } from "react";
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const form = useRef();
@@ -11,9 +12,11 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    e.target.reset().then(
+    emailjs.sendForm('service_xiluxii','template_caiuj5r', form.current, 'HMwsQX_OaHJxAFOlR')
+    .then(
       (result) => {
         console.log(result.text);
+        e.target.reset()
       },
       (error) => {
         console.log(error.text);
